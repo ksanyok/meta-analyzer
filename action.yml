@@ -1,0 +1,16 @@
+name: "Meta Tag Analyzer by PromoPilot"
+description: "Audit a page's SEO meta tags and fail on noindex, missing titles or broken canonicals."
+author: "Alexandr Krikun"
+branding:
+  icon: "tag"
+  color: "purple"
+inputs:
+  args:
+    description: "Arguments passed to the meta-analyzer CLI, e.g. \"example.com\""
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Run meta-analyzer
+      shell: bash
+      run: node "$GITHUB_ACTION_PATH/bin/cli.js" ${{ inputs.args }}

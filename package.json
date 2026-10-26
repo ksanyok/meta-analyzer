@@ -1,0 +1,55 @@
+{
+  "name": "@promopilot/meta-analyzer",
+  "version": "1.0.0",
+  "description": "Audit SEO meta tags from the command line: title and description length, meta robots and X-Robots-Tag noindex, canonical, viewport, lang, charset, H1, hreflang, Open Graph and Twitter cards. Works on live URLs or local HTML. Zero-dependency Node.js CLI, library and GitHub Action. Free online version by PromoPilot.",
+  "keywords": [
+    "meta-tags",
+    "seo",
+    "seo-audit",
+    "meta-description",
+    "title-tag",
+    "canonical",
+    "noindex",
+    "open-graph",
+    "technical-seo",
+    "seo-tools",
+    "cli",
+    "nodejs",
+    "github-action",
+    "promopilot"
+  ],
+  "homepage": "https://promopilot.link/en/tools/meta-analyzer.php?utm_source=github&utm_medium=repo&utm_campaign=tools&utm_content=meta-analyzer",
+  "bugs": {
+    "url": "https://github.com/ksanyok/meta-analyzer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksanyok/meta-analyzer.git"
+  },
+  "license": "MIT",
+  "author": "Alexandr Krikun (https://github.com/ksanyok)",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "meta-analyzer": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
